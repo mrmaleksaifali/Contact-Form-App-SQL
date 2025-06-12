@@ -143,6 +143,15 @@ SELECT * FROM contacts;
 +----+------------+---------------------+
 ```
 
+#### Allow Jenkins To Run Sudo Without a Password
+```bash
+sudo visudo
+```
+#### Add Editor File
+```bash
+jenkins ALL=(ALL) NOPASSWD:ALL
+```
+
 ### 🧪 Jenkins Pipeline: Deploy Node.js + MySQL Contact Form App
 #### 📋 Jenkinsfile (Declarative Pipeline)
 
