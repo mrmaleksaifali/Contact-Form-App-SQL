@@ -34,8 +34,8 @@ contact-form/
 ### 1. Clone the Repo
 
 ```bash
-git clone https://github.com/DhruvShah0612/database_sql.git
-cd database_sql
+git clone https://github.com/Meet01234/Contact-Form-App-SQL.git
+cd Contact-Form-App-SQL
 ```
 
 ### 2. Install Required Packages
@@ -178,8 +178,8 @@ pipeline {
         stage('Clone Repo') {
             steps {
                 sh '''
-                rm -rf database_sql
-                git clone https://github.com/DhruvShah0612/database_sql.git
+                rm -rf Contact-Form-App-SQL
+                git clone https://github.com/Meet01234/Contact-Form-App-SQL.git
                 '''
             }
         }
@@ -225,7 +225,7 @@ pipeline {
             steps {
                 sh '''
                 sudo npm install -g pm2
-                cd database_sql
+                cd Contact-Form-App-SQL
                 pm2 start server.js --name contact-form
                 pm2 save
                 sudo pm2 startup systemd -u $USER --hp $HOME
@@ -248,7 +248,7 @@ pipeline {
 ### 🛠️ Verify MySQL Connection via Node.js
 
 ```bash
-cd /var/lib/jenkins/workspace/New/database_sql
+cd /var/lib/jenkins/workspace/New/Contact-Form-App-SQL
 node server.js
 ```
 
