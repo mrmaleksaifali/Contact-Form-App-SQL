@@ -9,7 +9,7 @@ const db = mysql.createConnection({
   host: '43.205.191.161',
   user: 'root',
   password: '1234',
-  database: 'contact_form'
+  database: 'demo_db'
 });
 
 db.connect(err => {
