@@ -6,9 +6,9 @@ const PORT = 4000;
 
 // MySQL connection
 const db = mysql.createConnection({
-  host: '43.205.191.161',
-  user: 'root',
-  password: '1234',
+  host: 'localhost',
+  user: 'nodeuser',
+  password: 'StrongPassword123!',
   database: 'demo_db'
 });
 
